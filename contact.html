@@ -10,6 +10,9 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 
 	</head>
 	<body>
@@ -32,28 +35,51 @@
 				</p>
 				</br>
 				<p>
-				720-883-1971
+				<a href="tel:7208831971">720-883-1971</a>
 				</p>
 				</br>
 				<p>
-				kraemer.ross@gmail.com
+				<a href="mailto:kraemer.ross@gmail.com.com?Subject=Hey%20Ross" target="_top">Email Me</a>
 				</p>			
 			</div>
 		</section>
-		<section id="testimonial">
-			<div class="container">
-			
+		<section>
+			<div class="container" id="form_elements">
+				<form action="https://formspree.io/your@email.com" method="POST">
+        			<fieldset>         
+	        			<br/>
+	          			<!-- Let the "First name" input field automatically get focus when the page load -->
+		          		<div class="form-row">    
+		           			<input type="text" name="first_name" id="first_name" autofocus>
+		           			<label for="first_name">First Name</label>
+		          		</div>
+		          		<div class="form-row">    
+			            	<input type="text" name="last_name" id="last_name">
+			            	<label for="last_name">Last Name</label>
+			          	</div>
+			          	<div class="form-row">    
+			            	<input type="email" name="email-address" id="email_address">
+			            	<label for="email_address">Email</label>
+			          	</div>
+		        	</fieldset>
+		        	<button class="button cta" type="button" href="#">Send</button>
+	        	</form>
+	        	</br>
 			</div>
 		</section>
+		<br/>
+		<br/>
 		<aside id="bottom-cta">
 		</aside>
 		<footer>
 			<ul>
-				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
-				<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+				<li><a href="https://twitter.com/ross_kraemer"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+				<li><a href="http://facebook.com/kraemer.ross"><img src="images/facebook.png" alt="Facebook logo"></a></li>
 			</ul>
 
 			<p class="copyright">Copyright 2017. All rights reserved.</p>
 		</footer>
 	</body>
+	<script src="js/script.js"></script>
+
 </html>
